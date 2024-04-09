@@ -1,36 +1,18 @@
-# belly_button_challenge
 
-Belly Button Challenge Data Analysis
-This repository contains code for analyzing data from the Belly Button Challenge. The data is stored in a JSON file (samples.json). The code utilizes D3.js for data manipulation and Plotly for data visualization.
+Certainly! Here's the updated README with additional information about the bubble chart, bar graph, and other features:
 
-Setup
-Ensure you have the necessary libraries installed:
+Belly Button Washing Frequency Dashboard
+Overview
+This project aims to visualize belly button washing frequency data using a Dash web application. The dataset used in this project contains information about individuals' belly button microbes, including their washing frequencies. The dashboard provides an interactive way to explore and understand the relationship between belly button washing frequency and microbial diversity.
 
-bash
-Copy code
-npm install d3@latest plotly@latest
-Usage
-Clone this repository to your local machine.
-Open index.html in your preferred web browser.
-Description
-The index.html file contains JavaScript code to fetch and analyze the Belly Button Challenge data. Here's a breakdown of what each function does:
-
-init(): Initializes the webpage by populating the dropdown menu with sample names and building initial plots.
-buildMetadata(sample): Populates metadata information based on the selected sample.
-buildBarChart(sample): Builds a bar chart showing the top 10 Operational Taxonomic Units (OTUs) present in the selected sample.
-buildBubbleChart(sample): Builds a bubble chart displaying all OTUs present in the selected sample.
-buildGaugeChart(sample): Builds a gauge chart representing the belly button washing frequency for the selected sample.
-optionChanged(value): Event handler for dropdown menu selection change. Calls all functions to update plots based on the selected sample.
-How to Run
-To run this code, follow these steps:
-
-Set the url variable to the path of your samples.json file.
-Ensure your directory structure matches the one specified in the url variable.
-Open index.html in a web browser.
-Note
-This code assumes the structure of the samples.json file matches the expected format. Any changes to the structure may require corresponding adjustments in the code.
-
-
-
-
-
+Features
+Input Field: Users can input their belly button washing frequency into the provided input field.
+Gauge Chart: An interactive gauge chart dynamically updates based on the user's input to display the washing frequency.
+Bubble Chart: Visualizes the microbial species present in the belly button samples. The size of each bubble represents the abundance of the microbial species, and the color indicates the operational taxonomic unit (OTU) ID.
+Bar Graph: Displays the top 10 microbial species found in the selected belly button sample. Users can select different samples from the dropdown menu to view the corresponding data.
+Sample Metadata: Displays demographic information about the selected sample, including ID, ethnicity, gender, age, and location.
+Interactive Dashboard: Provides an intuitive and user-friendly interface for exploring the data.
+Dependencies
+Python 3.x
+Dash: A Python framework for building web applications.
+Plotly: A graphing library for creating interactive visualizations.
